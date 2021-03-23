@@ -1,0 +1,87 @@
+:root{
+    --primarycolor:#8AB082;
+    --secondarycolor:#8F8389;
+    --red: tomato;
+}
+.avatar{
+    display: flex;
+    align-items: baseline;
+}
+.avatar-user-img{
+    height: 6em;
+    width: 6em;
+    padding: 1em 1em;
+}
+.avatar-16{
+    height: 16px;
+    width: 16px;
+    padding: 1em 1em;
+}
+.avatar-24{
+    height: 24px;
+    width: 24px;
+    padding: 1em 1em;
+}
+.avatar-32{
+    height: 32px;
+    width: 32px;
+    padding: 1em 1em;
+}
+.avatar-48{
+    height: 48px;
+    width: 48px;
+    padding: 1em 1em;
+}
+.avatar-64{
+    height: 64px;
+    width: 64px;
+    padding: 1em 1em;
+}
+.avatar-96{
+    height: 96px;
+    width: 96px;
+    padding: 1em 1em;
+}
+
+.primary-btn{
+    color: whitesmoke;
+    background-color: var(--primarycolor);
+    padding: 1em;
+    border-style: none;
+    border-radius: 0.3em;
+    text-align: center;
+    cursor: pointer;
+}
+.secondary-btn{
+    color: var(--primarycolor);
+    border: 1px solid var(--primarycolor);
+    padding: 1em;
+    border-radius: 0.3em;
+    background-color: #fff;
+    text-align: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.secondary-btn:hover{
+    background-color: var(--primarycolor);
+    color: whitesmoke;
+}
+.primary-btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 15px 50px 0 rgba(0,0,0,0.19);
+}
+.nav-bar{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--primarycolor);
+    padding: 0.5em;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+}
+a:hover{
+    background-color:var(--secondarycolor);
+}
