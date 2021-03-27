@@ -77,7 +77,7 @@
     background-color: var(--primarycolor);
     color: whitesmoke;
 }
-.primary-btn:hover{
+.p-btn:hover{
     box-shadow: 0 12px 16px 0 var(--secondarycolor),0 15px 50px 0 var(--secondarycolor);
 }
 .nav-bar{
@@ -155,8 +155,8 @@ a:hover{
     border-radius:5px;
     text-align: center;
     cursor: pointer;
-    width: 20%;
-    font-size: 25px;
+    width: 20%; 
+     font-size: 25px; 
 }
 .modal-header{
     display: flex;
@@ -191,4 +191,48 @@ a:hover{
 }
 hr{
     border: solid 0.1px var(--light-grey);
+}
+.badge{
+    padding-right: 0.3rem;
+    padding-left: 0.1rem;
+    border: 1px white solid;
+    margin: 0.3rem;
+    background-color: #fff;
+    color: var(--primarycolor);
+    border-radius: 50%;
+    text-align: center;
+}
+.online-offline{
+    height: 0.5rem;
+    width: 0.5rem;
+    position: relative;
+    right: 2.1rem;
+    top: -1rem;
+}
+.cart{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.cart-badge{
+    position: relative;
+    bottom: 2rem;
+    right: 1rem;
+    padding-right: 0.3rem;
+    padding-left: 0.1rem;
+    border: 1px white solid;
+    margin: 0.3rem;
+    background-color:var(--primary);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+.card-img{
+    height: 12rem;
+    margin-top: 1rem;
+}
+.card{
+    border: black 1px solid;
+    margin: 1rem;
+    max-width: 20%;
+    text-align: center;
 }
