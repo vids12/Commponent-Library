@@ -228,11 +228,27 @@ hr{
 }
 .card-img{
     height: 12rem;
-    margin-top: 1rem;
 }
 .card{
     border: black 1px solid;
     margin: 1rem;
     max-width: 20%;
+    text-align: center;
+}
+.card-div{
+    display: flex;
+    direction: column;
+}
+.card-badge{
+    position: relative;
+    top: 1.7rem;
+    right: 3.5rem;
+    padding-right: 0.3rem;
+    padding-left: 0.1rem;
+    border: 1px white solid;
+    margin: 0.3rem;
+    background-color:palevioletred;
+    color: white;
+    /* border-radius: 50%; */
     text-align: center;
 }
