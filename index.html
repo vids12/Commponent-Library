@@ -120,40 +120,27 @@
         <div class="search-bar">
             <input type="search" id="search" class="search" placeholder="Search">
             <button type="submit" class="primary-btn">
-                <i class="fas fa-search-plus"></i>
+                <img src="./images/fa fa search.png" alt="search-bar">
             </button>
              
         </div>
     </div>
-    <!-- <h2>Carousel</h2>
-    <div class="carousel-container">
-        <div id="products-carousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicator">
-                <li data-target="products-carousel" data-slide-to="0" class="activ e"></li>
-                <li data-target="products-carousel" data-slide-to="1"></li>
-                <li data-target="products-carousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="./images/carousel-0.jpg" alt="Image">
-                </div>
-                <div class="item">
-                    <img src="./images/carousel-1.jpg" alt="Image">
-                </div>
-                <div class="item">
-                    <img src="./images/carousel-2.jpg" alt="Image">
-                </div>
-            </div>
-         <img src="./images/carousel-2.jpg" alt="Image">
-            </div>
-           
-    </div> -->
     <h2>Tooltip</h2>
     <div class="tooltip">
         <p>Save it</p>
         <span class="tooltiptext">Save</span>
     </div>
-
-    <!-- <script src="./app.js"></script> -->
+    <h2>Toast/Snackbar</h2>
+    <div>
+        <button onclick="showToast()" class="primary-btn">Click Me!</button>
+        <div id="toast">Message</div>
+    </div>
+    <script>
+        function showToast(){
+            let x = document.getElementById("toast");
+            x.className="show";
+            setTimeout(()=> x.className=x.className.replace("show"," "),3000)
+        }
+    </script>
 </body>
 </html>

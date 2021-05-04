@@ -1,3 +1,6 @@
+*{
+    max-width:100%
+}
 :root{
     --primarycolor:#8AB082;
     --secondarycolor:#8F8389;
@@ -14,6 +17,7 @@
 .avatar{
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
 }
 .avatar-user-img{
     height: 5rem;
@@ -276,9 +280,10 @@ hr{
 .tooltip {
     position: relative;
     display: inline-block;
-  }
+    margin-left: 3rem;
+}
   
-  .tooltip .tooltiptext {
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: var(--primarycolor);
@@ -288,12 +293,12 @@ hr{
     padding: 5px 0;
     position: absolute;
     z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-  }
+    bottom: 80%;
+    left: 90%;
+    margin-left: -50px;
+}
   
-  .tooltip .tooltiptext::after {
+.tooltip .tooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -302,9 +307,27 @@ hr{
     border-width: 5px;
     border-style: solid;
     border-color: var(--primarycolor) transparent transparent transparent;
-  }
+}
   
-  .tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext {
     visibility: visible;
     transition-duration: 0.05s;
-  }
+}
+#toast{
+  visibility: hidden;
+  min-width: 20rem;
+  margin-left: -20rem;
+  background-color: var(--secondary);
+  color: var(--textColor);
+  text-align: center;
+  border-radius: 0.1rem;
+  padding: 1rem;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 1rem;
+  font-size: 1.5rem;
+}
+#toast.show{
+    visibility: visible;
+}
