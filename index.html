@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body>
     <h1>Library</h1>
     <h2>Avatar</h2>
+    <p>The Avatar component is used to represent a user, and displays the profile picture, initials or fallback icon.</p>
     <h4>Avatar Images</h4>
     <div class="avatar">
         <img src="./images/avatar-img/002-user.svg" alt="avatar" class="avatar-user-img" >
@@ -29,26 +31,139 @@
         <img src="./images/avatar-img/006-user-5.svg" alt="avatar-96" class="avatar-96">
     </div>
     <h2>Buttons</h2>
+    <p>A button indicates possible user action.</p>
     <div>
-        <button class="primary-btn">Primary Button</button>
+        <button class="primary-btn p-btn">Primary Button</button>
         <button class="secondary-btn">Secondary Button</button>
     </div>
     <h2>Nav-Bar</h2>
+    <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
     <nav>
         <ul class="nav-bar">
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Login/Register</a>
-            </li>
-            <li>
-                <a href="#">Contact Us</a>
-            </li>
+            <img src="./images/hamicon.svg"  alt="hamburger-icon" class="ham"/>
+            <div class=" nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Login/Register</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </div>
         </ul>
     </nav>
+    <h2>Alerts</h2>
+    <p>Alerts are used to communicate a state that affects a system, feature or page.</p>
+    <section>
+        <div class="alert primary-alert" role="alert">This is  primary-alert!</div>
+        <div class="alert secondary-alert" role="alert">This is  secondary-alert!</div>
+        <div class="alert success-alert" role="alert">This is  success-alert!</div>
+        <div class="alert danger-alert" role="alert">This is  danger-alert!</div>
+        <div class="alert warning-alert" role="alert">This is  warning-alert!</div>
+    </section>
+    <h2>Input Fields</h2>
+    <p>The Input component is a component that is used to get user input in a text field.</p>
+    <div>
+        <input type="text" placeholder="Primary" class="input-fields primary">
+        <input type="text" placeholder="Success"
+        class="input-fields success">
+        <input type="text" placeholder="Warning"
+        class="input-fields warning">
+        <input type="text"  placeholder="Failure"
+        class="input-fields failure">
+    </div>
+    <h2>Modal</h2>
+    <p>A modal is a dialog box/popup window that is displayed on top of the current page.</p>
+    <div class="modal">
+        <div class="modal-header">
+            <h6 class="modal-title">Modal Title</h6>
+            <img src="./images/delete.svg" alt="close-icon" class="close-icon">
+        </div>
+        <hr>
+        <div class="modal-body">
+            <p>Modal Body goes here.</p>
+        </div>
+        <hr>
+        <div class="buttons">
+            <button class="secondary-btn">Cancel</button>
+            <button class="primary-btn">Save</button>
+        </div>
+    </div>
+    <h2>Badge</h2>
+    <p>Badges are used to highlight an item's status for quick recognition.</p>
+    <div>
+        <div>
+            <button class="primary-btn">Notification<span class="badge"> 5</span></button>
+        </div>
+        <div>
+            <img src="./images/avatar-img/006-user-5.svg" alt="avatar-48" class="avatar-48 badge-avatar">
+            <span><img src="./images/online.svg" alt="online" class="online-offline"></span>
+        </div>
+        <div>
+            <img src="./images/cart.svg" alt="add to cart" class="cart">
+           <span class=" cart-badge">4</span>
+        </div>
+    </div>
+    <h2>Card</h2>
+    <p>Card is used to display an item of the page.</p>
+    <div class="card-div">
+        <div class="card">
+            <img src="./images/plant-card.jpg" alt="plants" class="card-img">
+            <p>Leafy House Plant</p>
+            <p>₹ 999</p>
+            <button class="primary-btn">Add to Cart</button>
+        </div>
+        <div class="category-card">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0535/8049/7061/files/banner6.1.jpg?v=1612837951"
+              alt="procelain-pots" class="category-img"
+            />
+            <h4 class="card-data">NAME</h4>
+            <p class="card-data">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur in repellat officiis enim! Mollitia vero eum quod voluptatum aut harum? Adipisci sunt dolores nesciunt architecto minima dolor id corrupti a.</p>
+            <button class="primary-btn">View More</button>
+          </div>
+        
+    </div>
+    <h2>Search Bar</h2>
+    <p>Search Bar is used to search an item.</p>
+    <div>
+        <div class="search-bar">
+            <input type="search" id="search" class="input-fields primary search-input" placeholder="Search">
+            <img src="./images/fa fa search.png" alt="search-bar" class="search-icon">
+             
+        </div>
+    </div>
+    <h2>Tooltip</h2>
+    <p>Tooltip is a small pop-up box that appears when the user hovers an element.</p>
+    <div class="tooltip">
+        <p>Hover over me</p>
+        <span class="tooltiptext">Save</span>
+    </div>
+    <h2>Toast/Snackbar</h2>
+    <p>Toast/Snackbars are often used as tooltips/popups to show a message at the bottom of the screen.</p>
+    <div>
+        <button onclick="showToast()" class="primary-btn">Click Me!</button>
+        <div id="toast">Message</div>
+    </div>
+    <footer class="footer">
+        <div class="footer-header">See Code on:</div>
+        <ul>
+            <li class="list-inline">
+                <a target="_blank" class="link" href="https://github.com/vids12/Commponent-Library">Github</a>
+            </li>
+        </ul>
+    </footer>
+    <script>
+        function showToast(){
+            let x = document.getElementById("toast");
+            x.className="show";
+            setTimeout(()=> x.className=x.className.replace("show"," "),3000)
+        }
+    </script>
 </body>
 </html>
